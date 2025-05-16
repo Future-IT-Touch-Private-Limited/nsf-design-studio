@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Playfair Display", serif;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body{
+  font-family: "Lato", sans-serif;
+
+}
+
+
+
+
+/* Hide scrollbar for horizontal filter scroll */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+
+  
+  @keyframes form-arrow {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px); /* Moves up */
+    }
+    100% {
+      transform: translateY(0); /* Back to original position */
+    }
+  }
+  
+  .form-anime {
+    animation: form-arrow 2s ease-in-out infinite;
+    filter: brightness(0) saturate(100%) invert(54%) sepia(11%) saturate(236%) hue-rotate(84deg) brightness(93%) contrast(91%);
+    opacity: 0.4;
+  }
+  
+
+
+
+  
