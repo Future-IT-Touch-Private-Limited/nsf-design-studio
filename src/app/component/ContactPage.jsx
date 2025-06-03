@@ -59,8 +59,8 @@ export default function ContactPage() {
                   <BiSolidPhoneCall className="text-lg" />
                 </div>
                 <div className="flex flex-col text-base lg:text-lg">
-                  <a href="tel:+9112346789">+91 12346789</a>
-                  <a href="tel:+9112346789">+91 12346789</a>
+                  <a href="tel:+91 82968 19909">+91 82968 19909</a>
+                  {/* <a href="tel:+91 82968 19909">+91 82968 19909</a> */}
                 </div>
               </div>
               <div className="flex items-center gap-x-4">
@@ -72,7 +72,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex flex-col text-base lg:text-lg">
                   <a href="mailto:info@example.com">info@example.com</a>
-                  <a href="mailto:info@interiar.com">info@interiar.com</a>
+                  {/* <a href="mailto:info@interiar.com">info@interiar.com</a> */}
                 </div>
               </div>
             </div>

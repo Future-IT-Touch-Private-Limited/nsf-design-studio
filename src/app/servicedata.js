@@ -365,6 +365,70 @@ export   const serviceData = [
   ]
   
     },
+      {
+      title: "Renovation and Remodeling",
+      description: [
+        "Give your existing space a fresh start with our expert renovation and remodeling services. We transform outdated interiors into stylish, functional environments.",
+        "From small updates to full overhauls, our team handles it all—planning, redesign, and execution—while preserving structure and enhancing style.",
+      ],
+      image: "/images/ourService/7.webp",
+      highlights: [
+        "Reviving outdated interiors",
+        "Space reconfiguration expertise",
+        "Blending new with existing design",
+        "End-to-end project management",
+        "Modernizing homes efficiently",
+        "Transformations with lasting impact",
+      ],
+      faq: [
+        {
+          srNo: "1",
+          question: "What is the difference between renovation and remodeling?",
+          answer:
+            "Renovation involves restoring or updating existing structures, while remodeling involves changing the layout, design, or structure of a space to meet new needs or aesthetics.",
+        },
+        {
+          srNo: "2",
+          question:
+            "How long does a typical renovation or remodeling project take?",
+          answer:
+            "The timeline varies based on the scope of the project, but most renovations or remodels take anywhere from a few weeks to a few months to complete.",
+        },
+        {
+          srNo: "3",
+          question: "Do you provide design services for renovations?",
+          answer:
+            "Yes, we offer comprehensive design services for renovations, helping you plan the space effectively while keeping your vision and budget in mind.",
+        },
+        {
+          srNo: "4",
+          question:
+            "Can you work with my existing layout, or do you recommend changes?",
+          answer:
+            "We can work with your existing layout or suggest changes based on functionality, aesthetics, and space optimization to ensure the renovation enhances the overall flow of your home.",
+        },
+        {
+          srNo: "5",
+          question:
+            "How do I set a budget for a renovation or remodeling project?",
+          answer:
+            "We work closely with you to assess your needs and provide a detailed cost estimate that helps you set a realistic budget for the project. Transparency and flexibility are key in our approach.",
+        },
+        {
+          srNo: "6",
+          question: "Will my home be livable during the renovation?",
+          answer:
+            "For most renovation projects, we aim to minimize disruption and ensure your home remains habitable. However, certain major remodels may require temporary adjustments or relocation during construction.",
+        },
+        {
+          srNo: "7",
+          question:
+            "Do you handle permits and legal requirements for remodeling?",
+          answer:
+            "Yes, we handle all necessary permits and ensure that the project complies with local regulations, so you don’t have to worry about legalities during the renovation process.",
+        },
+      ],
+    },
    
   ];
   

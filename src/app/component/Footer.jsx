@@ -474,9 +474,12 @@ export default function Footer() {
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row gap-y-10  justify-between mb-8">
           <div className="space-y-4 lg:w-[30%]">
-             <Link href="/">
-                  <img src="/images/NSF.webp" alt="NSF Design Studio" className="w-32 lg:w-44" />
-
+            <Link href="/">
+              <img
+                src="/images/NSF.webp"
+                alt="NSF Design Studio"
+                className="w-32 lg:w-44"
+              />
             </Link>
             <p className="mt-2  text-gray-300 transition-colors duration-200">
               A wonderful serenity has taken possession of my entire soul, like
@@ -541,13 +544,11 @@ export default function Footer() {
           <div className="space-y-2 md:hidden lg:block">
             <h5 className="font-bold text-xl">Quick Links</h5>
             <ul className="space-y-1 text-sm text-gray-300">
-              {quickLink.map(
-                (item, idx) => (
-                  <li key={idx} className="py-2 border-b border-gray-700">
-                    <Link href={item.link}> {item.title}</Link>
-                  </li>
-                )
-              )}
+              {quickLink.map((item, idx) => (
+                <li key={idx} className="py-2 border-b border-gray-700">
+                  <Link href={item.link}> {item.title}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -555,31 +556,29 @@ export default function Footer() {
             <div className="space-y-2 ">
               <h5 className="font-bold text-xl">Services</h5>
               <ul className="space-y-1 text-sm text-gray-300">
-              {service.slice(0, 5).map((item, idx) => (
-                <li key={idx} className="py-2 border-b border-gray-600">
-                  <Link
-                    href={`/service/${item.title
-                      .toLowerCase()
-                      .split(" ")
-                      .join("-")}`}
-                  >
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
+                {service.slice(0, 5).map((item, idx) => (
+                  <li key={idx} className="py-2 border-b border-gray-600">
+                    <Link
+                      href={`/service/${item.title
+                        .toLowerCase()
+                        .split(" ")
+                        .join("-")}`}
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div className="space-y-2">
               <h5 className="font-bold text-xl">Quick Links</h5>
               <ul className="space-y-1 text-sm text-gray-300">
-              {quickLink.map(
-                (item, idx) => (
+                {quickLink.map((item, idx) => (
                   <li key={idx} className="py-2 border-b border-gray-600">
                     <Link href={item.link}> {item.title}</Link>
                   </li>
-                )
-              )}
+                ))}
               </ul>
             </div>
           </div>
@@ -591,22 +590,18 @@ export default function Footer() {
             <div className="flex items-start gap-x-2   text-gray-300 transition-colors duration-200">
               <IoLocationOutline className="mt-2 " />
               <p className="">
-
-                        #689/404, 1st floor, Varthur Main Road,
-                            Gandhi circle,
-                            Bangalore, Karnataka
-                            India - 560087
-
+                #689/404, 1st floor, Varthur Main Road, Gandhi circle,
+                Bangalore, Karnataka India - 560087
                 {/* #123 Lorem Street, Ipsum Nagar, Dolor City, 400001, India */}
               </p>
             </div>
             <div className="flex flex-col gap-y-2  text-gray-300 hover:text-gray-100 transition-colors duration-200 ">
               <a
-                href="tel:+91 12345 6789"
+                href="tel:+91 82968 19909"
                 className="flex items-center gap-x-2  hover:text-gray-100"
               >
                 <MdOutlineLocalPhone className="" />
-                +91 12345 6789
+                +91 82968 19909
               </a>
               <a
                 href="mailto:info@dummy.com"
