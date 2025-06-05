@@ -160,9 +160,9 @@ export default function BlogInner({ singleBlog }) {
                           className="h-6 w-6 object-contain group-hover:invert transition duration-300"
                         />
                       </div>
-                      <p className="text-sm text-gray-700 group-hover:text-black transition duration-300">
-                        +91 1234567890
-                      </p>
+                      <a href="tel: +91 82968 19909" className="text-sm text-gray-700 group-hover:text-black transition duration-300">
+                       +91 82968 19909
+                      </a>
                     </div>
 
                     {/* Email */}

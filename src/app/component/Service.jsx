@@ -57,7 +57,7 @@ export default function OurServices() {
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2 hover:text-black transition">
-                  <Link href="/service-single">{service.title}</Link>
+                 {service.title}
                 </h3>
                 <p className="text-gray-600 text-justify lg:text-start text-base leading-relaxed">
                   {service.description}

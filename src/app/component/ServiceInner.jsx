@@ -9,26 +9,21 @@ import { serviceData as service } from "../servicedata";
 export default function ServiceInner({ singleService }) {
   const leftFeatures = [
     {
-      image:
-        "/images/serviceLeft/1.svg",
+      image: "/images/serviceLeft/1.svg",
       title: "tailored design solutions",
       desc: "We provide personalized interior design services that reflect your unique vision and lifestyle.",
     },
     {
-      image:
-      "/images/serviceLeft/2.svg",
+      image: "/images/serviceLeft/2.svg",
       title: "Seamless Project Management",
       desc: "We handle the entire design process, from concept to completion, with flawless execution.",
     },
     {
-      image:
-      "/images/serviceLeft/3.svg",
+      image: "/images/serviceLeft/3.svg",
       title: "Client-Centered Collaboration",
       desc: "Your input is valued throughout the entire process, ensuring your vision is fully realized.",
     },
   ];
-
-
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -59,8 +54,6 @@ export default function ServiceInner({ singleService }) {
       </div>
     </article>
   );
-
- 
 
   return (
     <div>
@@ -136,9 +129,12 @@ export default function ServiceInner({ singleService }) {
                           className="h-6 w-6 object-contain group-hover:invert transition duration-300"
                         />
                       </div>
-                      <p className="text-sm text-gray-700 group-hover:text-black transition duration-300">
-                        +91 1234567890
-                      </p>
+                      <a
+                        href="tel:+91 82968 19909"
+                        className="text-sm text-gray-700 group-hover:text-black transition duration-300"
+                      >
+                        +91 82968 19909
+                      </a>
                     </div>
 
                     {/* Email */}
@@ -163,23 +159,19 @@ export default function ServiceInner({ singleService }) {
           <div className="lg:col-span-2 space-y-6 lg:space-y-12">
             <img src={singleService.image} alt={singleService.title} />
             <div className="space-y-4 lg:space-y-6 text-justify">
-                  {singleService.description.map((elm,index)=>(
-                    <p key={index}>{elm}</p>
-                  ))}
-             
+              {singleService.description.map((elm, index) => (
+                <p key={index}>{elm}</p>
+              ))}
             </div>
             <div className="grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2">
               <img src={singleService.image} alt={singleService.title} />
               <div className="space-y-4 lg:space-y-4">
-                    {singleService.highlights.map((elm,index)=>(
-                      <div key={index} className="flex items-center gap-2">
-                  <FaCheckCircle className="text-[#A0A8A2]" />
-                  <p>{elm}</p>
-                </div>
-                    ))}
-
-               
-                
+                {singleService.highlights.map((elm, index) => (
+                  <div key={index} className="flex items-center gap-2">
+                    <FaCheckCircle className="text-[#A0A8A2]" />
+                    <p>{elm}</p>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="why-choose space-y-4">
@@ -224,8 +216,9 @@ export default function ServiceInner({ singleService }) {
                 Have any questions? Look here now
               </h5>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed ">
-              Our dedicated team works closely with you to understand your vision and bring it to life with meticulous attention to detail and care.
-
+                Our dedicated team works closely with you to understand your
+                vision and bring it to life with meticulous attention to detail
+                and care.
               </p>
 
               {/* FAQ List */}
