@@ -4,12 +4,12 @@ import React, { useState } from "react";
 const PortfolioSection = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [portfolioItems] = useState([
-    { id: 1, title: "Innovation", category: "Bedroom", image: "images/service-3.webp", link: "" },
-    { id: 2, title: "Minimalism", category: "Furniture", image: "images/project-1.webp", link: "" },
-    { id: 3, title: "Lighting", category: "Interior", image: "images/project-3.webp", link: "" },
-    { id: 4, title: "Bold Tiles", category: "Kitchen", image: "images/project-4.webp", link: "" },
-    { id: 5, title: "Clean lines", category: "Bedroom", image: "images/service-2.webp", link: "" },
-    { id: 6, title: "Integral", category: "Architecture", image: "images/service-1.webp", link: "" },
+    { id: 1, title: "Innovation", category: "Bedroom", image: "/images/service-3.webp", link: "" },
+    { id: 2, title: "Minimalism", category: "Furniture", image: "/images/project-1.webp", link: "" },
+    { id: 3, title: "Lighting", category: "Interior", image: "/images/project-3.webp", link: "" },
+    { id: 4, title: "Bold Tiles", category: "Kitchen", image: "/images/project-4.webp", link: "" },
+    { id: 5, title: "Clean lines", category: "Bedroom", image: "/images/service-2.webp", link: "" },
+    { id: 6, title: "Integral", category: "Architecture", image: "/images/service-1.webp", link: "" },
   ]);
 
   const categories = ["All", "Architecture", "Bedroom", "Furniture", "Interior", "Kitchen"];

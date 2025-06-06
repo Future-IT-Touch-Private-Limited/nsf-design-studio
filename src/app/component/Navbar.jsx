@@ -583,7 +583,7 @@ export default function Navbar() {
         )}
       </div>
 
-          <Link className="hover:text-[#b08c54]" href="#">Portfolio</Link>
+          <Link className="hover:text-[#b08c54]" href="/portfolio">Portfolio</Link>
           <Link className="hover:text-[#b08c54]" href="/blogs">Blogs</Link>
           <Link className="hover:text-[#b08c54]" href="/contact-us">Contact Us</Link>
         </nav>
@@ -653,7 +653,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link className="hover:text-[#b08c54]" href="#" onClick={()=>setIsOpen(false)}>Portfolio</Link>
+            <Link className="hover:text-[#b08c54]" href="/portfolio" onClick={()=>setIsOpen(false)}>Portfolio</Link>
             <Link className="hover:text-[#b08c54]" href="/blogs" onClick={()=>setIsOpen(false)}>Blogs</Link>
             <Link className="hover:text-[#b08c54]" href="/contact-us" onClick={()=>setIsOpen(false)}>Contact Us</Link>
           </div>

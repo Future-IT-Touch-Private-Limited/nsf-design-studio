@@ -106,7 +106,7 @@ export default function BlogInner({ singleBlog }) {
             <a href="https://www.twitter.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-[#7c877f] hover:bg-[#6a756c] rounded flex items-center justify-center text-white">
               <FaTwitter className="text-lg" />
             </a>
-            <a href="https://www.youtube.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-[#7c877f] hover:bg-[#6a756c] rounded flex items-center justify-center text-white">
+            <a href="https://www.youtube.com/channel/UC7Hw5YzWh_R5k3X1U1SaXJA" target="_blank" rel="noreferrer" className="w-9 h-9 bg-[#7c877f] hover:bg-[#6a756c] rounded flex items-center justify-center text-white">
               <FaYoutube className="text-lg" />
             </a>
           </div>
@@ -174,9 +174,10 @@ export default function BlogInner({ singleBlog }) {
                           className="h-6 w-6 object-contain group-hover:invert transition duration-300"
                         />
                       </div>
-                      <p className="text-sm text-gray-700 group-hover:text-black transition duration-300">
-                        info@domain.com
-                      </p>
+                      <a href="mailto:nsfstudiodesign@gmail.com" className="text-sm text-gray-700 group-hover:text-black transition duration-300">
+                        {/* info@domain.com */}
+                        nsfstudiodesign@gmail.com
+                      </a>
                     </div>
                   </div>
                 </div>

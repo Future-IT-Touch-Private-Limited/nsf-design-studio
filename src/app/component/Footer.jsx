@@ -513,7 +513,7 @@ export default function Footer() {
                 <FaTwitter className="text-lg" />
               </a>
               <a
-                href="https://www.youtube.com"
+                href="https://www.youtube.com/channel/UC7Hw5YzWh_R5k3X1U1SaXJA"
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 bg-[#7c877f] hover:bg-[#6a756c] rounded flex items-center justify-center text-white"
@@ -604,11 +604,11 @@ export default function Footer() {
                 +91 82968 19909
               </a>
               <a
-                href="mailto:info@dummy.com"
+                href="mailto:nsfstudiodesign@gmail.com"
                 className="flex items-center gap-x-2  hover:text-gray-100"
               >
                 <HiOutlineMail />
-                info@dummy.com
+                nsfstudiodesign@gmail.com
               </a>
             </div>
 
@@ -652,7 +652,7 @@ export default function Footer() {
           <div className="space-x-4 mb-2 md:mb-0  flex md justify-center md">
             <Link
               className=" text-gray-400 hover:text-gray-100 transition-colors duration-200"
-              href="/privacy-Policy"
+              href="/privacy-policy"
             >
               Privacy Policy |
             </Link>

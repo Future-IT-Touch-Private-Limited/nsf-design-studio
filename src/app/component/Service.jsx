@@ -4,10 +4,12 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import { serviceData as service} from "../servicedata";
+import { useState } from "react";
 export default function OurServices() {
 
   const pathName=usePathname()
 
+  const [show,setShow]=useState(6)
  
   return (
     <section className="our-services px-5 md:px-12 xl:px-32 py-8 md:py-12 xl:py-16 bg-white">
@@ -38,7 +40,7 @@ export default function OurServices() {
 
         {/* Services Cards */}
         <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {service.map((service, index) => (
+          {service.slice(0,show).map((service, index) => (
             <Link
             href={`/service/${service.title.toLowerCase().split(" ").join("-")}`}
               key={index}
@@ -67,23 +69,24 @@ export default function OurServices() {
           ))}
         </div>
 
-        {/* Call to Action */}
-        {/* <div className="text-center mt-16">
-          <Link href="/services">
-            <p className="inline-block bg-[#5D675F] text-white px-8 py-3 text-lg font-semibold  hover:bg-gray-800 transition-all">
-              See All Services
-            </p>
-          </Link>
-        </div> */}
 
-          {pathName!=="/service" && (
+          {/* {pathName!=="/service" && (
             <Link href="/" className="relative mx-auto mt-16 w-fit group flex gap-x-4 items-center px-8 py-4 bg-[#7c877f] text-white text-sm font-semibold hover:bg-[#000] hover:text-[#fff]  transition duration-300">
                         <span> See All Services</span>
                         <span className="transition-transform transform group-hover:translate-x-1">
                           <FaArrowRight />
                         </span>
                       </Link>
-          )}
+          )} */}
+
+            {show < service.length &&             <button onClick={()=>setShow((prev)=>prev+6)}  className="relative mx-auto mt-16 w-fit group flex gap-x-4 items-center px-8 py-4 bg-[#7c877f] text-white text-sm font-semibold hover:bg-[#000] hover:text-[#fff]  transition duration-300">
+                        <span> See All Services</span>
+                        <span className="transition-transform transform group-hover:translate-x-1">
+                          <FaArrowRight />
+                        </span>
+                      </button>
+}
+
 
        
       </div>

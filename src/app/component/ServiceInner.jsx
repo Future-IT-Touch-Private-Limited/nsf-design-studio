@@ -146,9 +146,9 @@ export default function ServiceInner({ singleService }) {
                           className="h-6 w-6 object-contain group-hover:invert transition duration-300"
                         />
                       </div>
-                      <p className="text-sm text-gray-700 group-hover:text-black transition duration-300">
-                        info@domain.com
-                      </p>
+                      <a href="nsfstudiodesign@gmail.com" className="text-sm text-gray-700 group-hover:text-black transition duration-300">
+                       nsfstudiodesign@gmail.com
+                      </a>
                     </div>
                   </div>
                 </div>

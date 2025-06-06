@@ -36,43 +36,31 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
             <div className="space-y-5 ">
               <div className="flex items-center gap-x-4 border-b border-gray-300 pb-4">
-                <div
-                
-                  className="w-9 h-9 aspect-square rounded-full bg-[#7c877f] hover:bg-[#6a756c] flex items-center justify-center text-white "
-                >
+                <div className="w-9 h-9 aspect-square rounded-full bg-[#7c877f] hover:bg-[#6a756c] flex items-center justify-center text-white ">
                   <FaLocationDot className="text-lg" />
                 </div>
                 <p className="text-base lg:text-lg">
-                    #689/404, 1st floor, Varthur Main Road,
-                            Gandhi circle,
-                            Bangalore, Karnataka
-                            India - 560087
-
+                  #689/404, 1st floor, Varthur Main Road, Gandhi circle,
+                  Bangalore, Karnataka India - 560087
                 </p>
               </div>
 
               <div className="flex items-center gap-x-4 border-b border-gray-300 pb-4">
-                <div
-                 
-                  className="w-9 h-9 aspect-square rounded-full bg-[#7c877f] hover:bg-[#6a756c] flex items-center justify-center text-white "
-                >  
+                <div className="w-9 h-9 aspect-square rounded-full bg-[#7c877f] hover:bg-[#6a756c] flex items-center justify-center text-white ">
                   <BiSolidPhoneCall className="text-lg" />
                 </div>
                 <div className="flex flex-col text-base lg:text-lg">
                   <a href="tel:+91 82968 19909">+91 82968 19909</a>
-                  {/* <a href="tel:+91 82968 19909">+91 82968 19909</a> */}
                 </div>
               </div>
               <div className="flex items-center gap-x-4">
-                <div
-                
-                  className="w-9 h-9 aspect-square rounded-full bg-[#7c877f] hover:bg-[#6a756c] flex items-center justify-center text-white "
-                >
+                <div className="w-9 h-9 aspect-square rounded-full bg-[#7c877f] hover:bg-[#6a756c] flex items-center justify-center text-white ">
                   <IoMail className="text-lg" />
                 </div>
                 <div className="flex flex-col text-base lg:text-lg">
-                  <a href="mailto:info@example.com">info@example.com</a>
-                  {/* <a href="mailto:info@interiar.com">info@interiar.com</a> */}
+                  <a href="mailto:nsfstudiodesign@gmail.com">
+                    nsfstudiodesign@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -85,15 +73,15 @@ export default function ContactPage() {
               <table className="w-full text-left border-separate border-spacing-y-2">
                 <tbody>
                   <tr className="border border-white border-opacity-20 rounded">
-                    <td className="py-2 px-3 font-bold">Sat - Mon</td>
-                    <td className="py-2 px-3 text-gray-400">10 AM - 8 PM</td>
+                    <td className="py-2 px-3 font-bold">Mon - Wed</td>
+                    <td className="py-2 px-3 text-gray-400">9:30AM - 6 PM</td>
                   </tr>
                   <tr className="border border-white border-opacity-20 rounded">
-                    <td className="py-2 px-3 font-bold">Tue - Thu</td>
-                    <td className="py-2 px-3 text-gray-400">11 AM - 7 PM</td>
+                    <td className="py-2 px-3 font-bold">Thu - Sat</td>
+                    <td className="py-2 px-3 text-gray-400">10 AM - 6.:30 PM</td>
                   </tr>
                   <tr className="border border-white border-opacity-20 rounded">
-                    <td className="py-2 px-3 font-bold">Friday</td>
+                    <td className="py-2 px-3 font-bold">Sunday</td>
                     <td className="py-2 px-3 text-gray-400">Off Day</td>
                   </tr>
                 </tbody>
@@ -142,10 +130,12 @@ export default function ContactPage() {
       </div>
 
       {/* map  */}
-      <div className="px-4  sm:px-6 md:px-8 lg:px-24 xl:px-32">
-        <div className="w-full h-[450px]">
+      <div className="">
+        <div className="w-full h-[300px] lg:h-[450px]">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109744.22709340513!2d76.68831206468506!3d30.732254422013508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1745226899495!5m2!1sen!2sin"
+          
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.249145140753!2d77.70876137793631!3d12.955902954761498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae120bd9f36467%3A0xe18f2e5ce1d1bb9f!2sVarthur%20Main%20Rd%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1749184378280!5m2!1sen!2sin"
+
             width="100%"
             height="100%"
             className="border-0 w-full h-full"
@@ -158,3 +148,5 @@ export default function ContactPage() {
     </div>
   );
 }
+
+
